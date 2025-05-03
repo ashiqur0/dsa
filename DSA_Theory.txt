@@ -4,4 +4,10 @@ Algorithm: A set of step-by-step instructions to solve a specific problem.
 
 Data Structure: A way of organizing data so it can be used efficiently.
 
+Time Complexity: A measure of the amount of time an algorithm takes to run, depending on the amount of data the algorithm is working on.
+
+Space Complexity: 
+
+Big O Notation: 
+
 Recursion: A programmin technique where a function calls itself.
