@@ -8,5 +8,3 @@ for i in range(3):
     print(fibo3)
     fibo1 = fibo2
     fibo2 = fibo3
-else:
-    print("Done") 
