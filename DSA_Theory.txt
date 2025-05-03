@@ -11,3 +11,7 @@ Space Complexity: A measure of the amount of memory an algorithm uses, depending
 Big O Notation: 
 
 Recursion: A programmin technique where a function calls itself.
+
+Divide and Conqure: 
+
+BruteForce: 
