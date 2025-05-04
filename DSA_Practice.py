@@ -141,3 +141,10 @@ for i in range(1, n):
     arr[insert_index] = current_value
     
 print('Sorted Array:-', arr)
+
+# Linear Search
+arr = [2, 3, 6, 4, 5, 9]
+item = 5
+for i in range(len(arr)):
+    if arr[i] == item:
+        print(item, "Found at index", i)
