@@ -148,3 +148,25 @@ item = 5
 for i in range(len(arr)):
     if arr[i] == item:
         print(item, "Found at index", i)
+
+# Binary Search
+def binarySearch(a, item):
+    left = 0
+    right = len(a)-1
+    while left <= right:
+        mid = (left + right) // 2
+        if a[mid] == item:
+            return mid
+        if a[mid] < item:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return False
+
+a = [1, 3, 4, 6, 7]
+item = 4
+result = binarySearch(a, item)
+if result:
+    print(item, 'found')
+else:
+    print(item, 'not found')
