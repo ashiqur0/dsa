@@ -1,0 +1,19 @@
+DSA Learning Map:
+
+Data Structure:
+1. Array
+2. Linked List
+3. Stack 
+4. Queue
+5. Hash Table
+6. Tree
+7. Graph
+
+Algorithm:
+1. Searching
+2. Sorting
+3. Time Complexity, Space Complexity
+4. Divide and Conqure
+5. Dynamic Programming
+6. Tree related Algorithm
+7. Graph related Algorithm
