@@ -14,4 +14,4 @@ Recursion: A programmin technique where a function calls itself.
 
 Divide and Conqure: 
 
-BruteForce: 
+BruteForce: In Data Structures and Algorithms (DSA), the brute force approach is a straightforward method for solving problems by systematically trying all possible solutions until the correct one is found
