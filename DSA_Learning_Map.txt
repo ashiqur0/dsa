@@ -17,3 +17,20 @@ Algorithm:
 5. Dynamic Programming
 6. Tree related Algorithm
 7. Graph related Algorithm
+
+Programming Pattern
+1. Prefix Sum
+2. Two Pointers
+3. Sliding Window
+4. Fast and Slow Pointers
+5. Llinked List In-place Reversal
+6. Monotonic Stack
+7. Top 'K' Elements
+8. Overlaping intervals
+9. Modified Binary Search
+10. Binary Tree Traversal
+11. Depth-First Search
+12. Breadth-First Search
+13. Matrix Traversal
+14. Back Tracking 
+15. Dynamic Programming
