@@ -1,8 +1,12 @@
 DSA Learning Map:
 
 Data Structure:
-1. Array        ✅
-    operation : create, access, update, insert, delete, search, sort, traverse
+1. Array
+    create ✅        access   ✅
+    update ✅        insert   ✅
+    delete ✅        search   ✅
+    sort   ✅        traverse ✅
+
 2. Linked List  
 3. Stack        
 4. Queue        
