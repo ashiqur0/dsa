@@ -2,10 +2,10 @@ DSA Learning Map:
 
 Data Structure:
 1. Array
-    create ✅        access   ✅
-    update ✅        insert   ✅
-    delete ✅        search   ✅
-    sort   ✅        traverse ✅
+   create ✅    access   ✅    sum                2D Array 
+   update ✅    insert   ✅    sabtract           3D Array 
+   delete ✅    search   ✅    multiplication 
+   sort   ✅    traverse ✅    division       
 
 2. Linked List  
 3. Stack        
@@ -15,15 +15,15 @@ Data Structure:
 7. Graph        
 
 C++ STL         
-1. Vector       ✅
-2. List         ✅
-3. Stack        ✅
-4. Queue        ✅
-5. Deque        ✅
-6. Set          ✅
-7. Map          ✅
-8. Iterator     ✅
-9. Algorithm    ✅
+1. Vector    ✅
+2. List      ✅
+3. Stack     ✅
+4. Queue     ✅
+5. Deque     ✅
+6. Set       ✅
+7. Map       ✅
+8. Iterator  ✅
+9. Algorithm ✅
 
 Algorithm:
 1. Searching
