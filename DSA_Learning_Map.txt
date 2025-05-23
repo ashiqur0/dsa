@@ -1,20 +1,10 @@
 DSA Learning Map:
 
-Data Structure:
-1. Array
-   create ✅    access   ✅    sum                2D Array 
-   update ✅    insert   ✅    sabtract           3D Array 
-   delete ✅    search   ✅    multiplication 
-   sort   ✅    traverse ✅    division       
+C++ OOP
+1. Classes/Object
+2. 
 
-2. Linked List  
-3. Stack        
-4. Queue        
-5. Hash Table   
-6. Tree         
-7. Graph        
-
-C++ STL         
+C++ STL      ✅ 
 1. Vector    ✅
 2. List      ✅
 3. Stack     ✅
@@ -25,9 +15,30 @@ C++ STL
 8. Iterator  ✅
 9. Algorithm ✅
 
+Data Structure:
+1. Array
+   create ✅    access   ✅    sum                1D Array 
+   update ✅    insert   ✅    sabtract           2D Array 
+   delete ✅    search   ✅    multiplication     3D Array 
+   sort   ✅    traverse ✅    division       
+
+2. Linked List  
+3. Stack        
+4. Queue        
+5. Hash Table   
+6. Tree         
+7. Graph        
+
 Algorithm:
-1. Searching
+1. Searching ✅
+   Binary Search        Linear Search
+
 2. Sorting
+   Bubble Sort    ✅          Selection Sort    ✅
+   Insertion Sort ✅          Merge Sort        
+   Quick Sort     ✅          Radix Sort        
+   Counting Sort  
+
 3. Time Complexity, Space Complexity
 4. Divide and Conqure
 5. Dynamic Programming

@@ -17,3 +17,5 @@ Divide and Conqure:
 BruteForce: In Data Structures and Algorithms (DSA), the brute force approach is a straightforward method for solving problems by systematically trying all possible solutions until the correct one is found
 
 Dynamic programming: is a powerful algorithmic technique used to solve optimization problems by breaking them down into smaller, overlapping subproblems and storing their solutions to avoid redundant calculations.
+
+Greedy: A greedy approach in algorithm design involves making locally optimal choices at each step with the hope of finding a globally optimal solution. It's a simple, often efficient method, but it's not guaranteed to produce the best overall result in every case. 

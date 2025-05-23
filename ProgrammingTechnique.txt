@@ -1,0 +1,8 @@
+1. Code Snippets
+2. # define pii pair<int, int>
+
+3. File input_output:
+    #ifndef ONLINE_JUDJE
+        freopen("i.txt", "r", stdin);
+        freopen("o.txt", "w", stdout);
+    #endif
