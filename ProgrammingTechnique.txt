@@ -6,3 +6,12 @@
         freopen("i.txt", "r", stdin);
         freopen("o.txt", "w", stdout);
     #endif
+
+4. Reduce time:
+    use scanf, printf function instead of cin, cout
+    use "\n" instead of endl
+    use #include <bits/stdc++.h> as header
+
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
