@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-int binarySearch(int arr[], int size, int target) {
-    int start = 0, end = size-1;
+int binarySearch(int arr[], int target) {
+    int start = 0, end = sizeof(arr) / sizeof(arr[0]) - 1;
+    
     while(start <= end){
         int mid = (start + end) / 2;
 
@@ -21,9 +22,8 @@ int main() {
 
     int arr[] = {1, 2, 3, 4, 5, 6, 7 };
     int target = 4;
-    int size = sizeof(arr) / sizeof(arr[0]);
 
-    int result = binarySearch(arr, size, target);
+    int result = binarySearch(arr, target);
     if(result != -1) {
         cout << target << " found at index " << result << endl;
     } else {
