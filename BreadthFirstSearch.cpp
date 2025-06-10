@@ -31,6 +31,7 @@ int main() {
         {1},
         {1, 2}
     };
+    
     int startNode = 0;
     BFS(adjList, startNode);
 
