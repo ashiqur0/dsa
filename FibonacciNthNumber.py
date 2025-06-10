@@ -3,9 +3,12 @@
 def F(n):
     if n <= 1:
         return n
-    else:
-        return F(n-1) + F(n-2)
+    return F(n-1) + F(n-2)
 
-print(F(9)) 
-
-# As 0 based index: F(9) will return the 10th fibonacci 
+print(F(0)) 
+print(F(1)) 
+print(F(2)) 
+print(F(3)) 
+print(F(4)) 
+print(F(5)) 
+print(F(6))
