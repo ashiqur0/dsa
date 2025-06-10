@@ -1,9 +1,9 @@
-#include <iostream>
-#include <vector>
-#include <queue>
+// Breadth First Search Algorithm
+
+#include <bits/stdc++.h>
 using namespace std;
 
-void BFS(int startNode, vector<vector<int>> adjList) {
+void BFS(vector<vector<int>> adjList, int startNode) {
     vector<bool> visited(adjList.size(), false);
     queue<int> q;
     visited[startNode] = true;
@@ -12,10 +12,10 @@ void BFS(int startNode, vector<vector<int>> adjList) {
         int currentNode = q.front();
         q.pop();
         cout << currentNode << " ";
-        for(int neighbor : adjList[currentNode]) {
-            if(!visited[neighbor]) {
-                visited[neighbor] = true;
-                q.push(neighbor);
+        for(int neighbour : adjList[currentNode]) {
+            if(!visited[neighbour]) {
+                visited[neighbour] = true;
+                q.push(neighbour);
             }
         }
     }
@@ -24,16 +24,15 @@ void BFS(int startNode, vector<vector<int>> adjList) {
 
 int main() {
 
-    vector<vector<int>> adjlist = {
+    vector<vector<int>> adjList = {
         {1, 2},
         {0, 3, 4},
         {0, 4},
         {1},
         {1, 2}
     };
-
     int startNode = 0;
-    BFS(startNode, adjlist);
+    BFS(adjList, startNode);
 
-    return 0;
+  return 0;
 }
