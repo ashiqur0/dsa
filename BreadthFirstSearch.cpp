@@ -6,12 +6,16 @@ using namespace std;
 void BFS(vector<vector<int>> adjList, int startNode) {
     vector<bool> visited(adjList.size(), false);
     queue<int> q;
+
+    //  start from unvisited node
     visited[startNode] = true;
     q.push(startNode);
     while(!q.empty()) {
         int currentNode = q.front();
         q.pop();
         cout << currentNode << " ";
+
+        // visite all the unvisited neighbours
         for(int neighbour : adjList[currentNode]) {
             if(!visited[neighbour]) {
                 visited[neighbour] = true;
@@ -31,7 +35,7 @@ int main() {
         {1},
         {1, 2}
     };
-    
+
     int startNode = 0;
     BFS(adjList, startNode);
 
