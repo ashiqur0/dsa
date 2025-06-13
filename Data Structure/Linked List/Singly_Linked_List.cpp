@@ -1,4 +1,4 @@
-//  Singly Linked List
+//  Singly Linked List: can move only forword direction
 
 #include <iostream>
 using namespace std;
