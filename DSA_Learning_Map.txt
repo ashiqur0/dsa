@@ -2,7 +2,15 @@ DSA Learning Map:
 
 C++ OOP
 1. Classes/Object
-2. 
+2. Class Methods
+3. Constructors
+4. Access Specifiers
+5. Encapsulations
+6. Inheritance
+7. Polymorphism
+8. Templates
+9. Files
+10. Date
 
 C++ STL      ✅ 
 1. Vector    ✅
@@ -23,6 +31,11 @@ Data Structure:
    sort   ✅    traverse ✅    division       
 
 2. Linked List  
+   Singly Linked List
+   Dobly Linked List
+   Circular Singly Linked List
+   Circular Doubly Linked List
+   
 3. Stack        
 4. Queue        
 5. Hash Table   
@@ -47,8 +60,14 @@ Algorithm:
    BFS            ✅          DFS               ✅     
 
 Programming Pattern
-1. Prefix Sum 
-2. Two Pointers
+1. Prefix Sum     ✅
+   LeetCode: 1480. Running Sum of 1d Array
+   LeetCode: 238. Product of Array Except Self
+2. Two Pointers   ✅
+   LeetCode: 1768. Merge Strings Alternately
+   LeetCode: 11. Container With Most Water
+   LeetCode: 15. 3Sum
+
 3. Sliding Window
 4. Fast and Slow Pointers
 5. Llinked List In-place Reversal
@@ -61,4 +80,12 @@ Programming Pattern
 12. Breadth-First Search
 13. Matrix Traversal
 14. Back Tracking 
-15. Dynamic Programming
+15. Dynamic Programming    ✅
+   LeetCode: 53. Maximum Subarray
+   LeetCode: 70. Climbing Stairs
+   LeetCode: 121. Best Time to Buy and Sell Stock
+   LeetCode: 152. Maximum Product Subarray
+   LeetCode: 300. Longest Increasing Subsequence
+   LeetCode: 322. Coin Change
+   LeetCode: 338. Counting Bits
+   LeetCode: 1143. Longest Common Subsequence
