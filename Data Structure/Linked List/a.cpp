@@ -1,25 +1,18 @@
-// Doubly Linked List
-#include <iostream>
+#include <iostream> 
 using namespace std;
 
 struct Node {
     int data;
     Node* next;
-    Node* prev;
+    Node(int value) : data(value), next(nullptr) {};
 };
 
-void insert(Node*& head, int value) {
-    Node* newNode = new Node{value, nullptr, nullptr};
-    if(!head) {
-        head = newNode;
-    } else {
-        Node* temp = head;
-        while(temp -> next) {
-            temp = temp -> next;
-        }
-        temp -> next = newNode;
-        newNode -> prev = temp;
+void display(Node* head) {
+    while(head) {
+        cout << head -> data << " -> ";
+        head = head -> next;
     }
+    cout << "nullptr" << endl;
 }
 
 void deletelist(Node*& head) {
@@ -30,37 +23,40 @@ void deletelist(Node*& head) {
     }
 }
 
-void displayForword(Node* head) {
-    while(head) {
-        cout << head -> data << " <-> ";
-        head = head -> next;
+Node* reverselist(Node* head) {
+    Node* prev = nullptr;
+    Node* curr = head;
+    Node* next = nullptr;
+    while(curr) {
+        next = curr -> next;
+        curr -> next = prev;
+        prev = curr;
+        curr = next;
     }
-    cout << "nullptr" << endl;
-}
-
-void displayBackword(Node* tail) {
-    while(tail) {
-        cout << tail -> data << " <-> ";
-        tail = tail -> prev;
-    }
-    cout << "nullptr" << endl;
+    return prev;
 }
 
 int main() {
 
-    Node* head = nullptr;
-    insert(head, 1);
-    insert(head, 2);
-    insert(head, 3);
+    Node* head = new Node(1);
+    head -> next = new Node(2);
+    head -> next -> next = new Node(3);
+    head -> next -> next -> next = new Node(4);
 
-    Node* tail = head;
-    while(tail -> next) {
-        tail = tail -> next;
-    }
+    cout << "Original List: ";
+    display(head);
     
-    displayForword(head);
-    displayBackword(tail);
+    head = reverselist(head);
+    cout << "Reverse List: ";
+    display(head);
+
     deletelist(head);
+
+    if(!head) {
+        cout << "List deleted successfully" << endl;
+    } else {
+        cout << "List not yeat deleted" << endl;
+    }
 
     return 0;
 }
