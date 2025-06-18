@@ -40,7 +40,9 @@ int lengthOfLongestSubstring(string s) {
 
 int main() {
 
-    string s = "";
+    // string s = "abcabcbb";  // 3
+    string s = "bbbbb";  // 1
+    // string s = "pwwkew";  // 3
     cout << lengthOfLongestSubstring(s) << endl;
 
   return 0;
