@@ -26,7 +26,7 @@ public class QuickSort {
             }
         }
 
-        int  temp = arr[i + 1];
+        int temp = arr[i + 1];
         arr[i + 1] = arr[high];
         arr[high] = temp;
 
@@ -36,6 +36,7 @@ public class QuickSort {
     public static void main(String[] args) {
         int[] arr = {64, 34, 25, 12, 22, 11, 90, 5};
         quickSort(arr, 0, arr.length - 1);
+
         for (int n : arr) {
             System.out.print(n + " ");
         }
