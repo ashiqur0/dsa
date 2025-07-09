@@ -1,4 +1,4 @@
-DSA Learning Map:
+DSA: Learning Map
 
 C++ OOP
 1. Classes/Object
@@ -31,10 +31,10 @@ Data Structure:
    sort   ✅    traverse ✅    division       
 
 2. Linked List  
-   Singly Linked List
-   Dobly Linked List
-   Circular Singly Linked List
-   Circular Doubly Linked List
+   Singly Linked List            ✅
+   Dobly Linked List             ✅
+   Circular Singly Linked List   ✅
+   Circular Doubly Linked List   ✅
    
 3. Stack        
 4. Queue        
