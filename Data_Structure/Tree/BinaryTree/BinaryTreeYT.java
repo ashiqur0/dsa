@@ -31,7 +31,7 @@ public class BinaryTreeYT {
             newNode.left = buildTree(nodes);
             newNode.right = buildTree(nodes);
             return newNode;
-        }        
+        }
     }
 
     // Preorder Traversal
@@ -113,12 +113,54 @@ public class BinaryTreeYT {
         return sumOfTree(root.left) + sumOfTree(root.right) + root.data;
     }
 
-    public static int heightOfTree(Node root) {
+    // height of the tree
+    public static int height(Node root) {
         if (root == null) {
             return 0;
         }
 
-        return Math.max(heightOfTree(root.left), heightOfTree(root.right)) + 1;
+        return Math.max(height(root.left), height(root.right)) + 1;
+    }
+
+    public static int diameter(Node root) {
+        if (root == null) {
+            return 0;
+        }
+
+        int diameter1 = diameter(root.left);
+        int diameter2 = diameter(root.left);
+        int diameter3 = height(root.left) + height(root.right) + 1;
+
+        return Math.max(diameter1, Math.max(diameter2, diameter3));
+    }
+
+    static class TreeInfo {
+        int diameter;
+        int height;
+        TreeInfo(int diameter, int height) {
+            this.diameter = diameter;
+            this.height = height;
+        }
+    }
+
+    public static TreeInfo diameter2(Node root) {
+        if (root == null) {
+            return new TreeInfo(0, 0);
+        }
+
+        TreeInfo left = diameter2(root.left);
+        TreeInfo right = diameter2(root.right);
+
+        int myHeight = Math.max(left.height, right.height) + 1;
+
+        int diameter1 = left.diameter;
+        int diameter2 = right.diameter;
+        int diameter3 = left.height + right.height + 1;
+
+        int myDiameter = Math.max(Math.max(diameter1, diameter2), diameter3);
+
+        TreeInfo info = new TreeInfo(myDiameter, myHeight);
+        return info;
     }
  
     public static void main(String[] args) {
@@ -140,6 +182,8 @@ public class BinaryTreeYT {
 
         // System.out.println(countNode(root));
         // System.out.println(sumOfTree(root));
-        System.out.println(heightOfTree(root));
+        // System.out.println(height(root));
+        // System.out.println(diameter(root));
+        System.out.println(diameter2(root).diameter); // because it returns obj
     }
 }
