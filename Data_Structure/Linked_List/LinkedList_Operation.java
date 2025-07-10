@@ -1,5 +1,5 @@
 /*
-Linked List Operation: Traversal, Search, Sort, delete, insert 
+Linked List Operation: Traversal, Search, Sort, delete, insert, update
 
 */
 
@@ -133,14 +133,20 @@ public class LinkedList_Operation {
         Node head = listImplementation();
         // traversal(head);
         // System.out.println(search(head, 30));   // true
-
+        
         // head = delete(head, head.next.next);
         // System.out.println("After Deletion: ");
-
+        
         // Node newNode = new Node(50);
         // head = insert(head, newNode, 5);
-
-        head = mergeSort(head);
+        
+        System.out.print("List: ");
         traversal(head);
+        head = mergeSort(head);
+        System.out.print("Sorted List: ");
+        traversal(head);
+        
+        head.data = 100;
+        System.out.println(head.data);
     }
 }
