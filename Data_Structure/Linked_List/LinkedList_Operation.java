@@ -18,10 +18,10 @@ public class LinkedList_Operation {
     }
 
     public static Node listImplementation() {
-        Node node1 = new Node(10);
-        Node node2 = new Node(20);
+        Node node1 = new Node(40);
+        Node node2 = new Node(10);
         Node node3 = new Node(30);
-        Node node4 = new Node(40);
+        Node node4 = new Node(20);
     
         node1.next = node2;
         node2.next = node3;
@@ -87,9 +87,51 @@ public class LinkedList_Operation {
         return head;
     }
 
+     // Function to find the middle of the list
+    static Node getMiddle(Node head) {
+        if (head == null) return head;
+
+        Node slow = head, fast = head.next;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
+
+    // Merge two sorted lists
+    static Node sortedMerge(Node a, Node b) {
+        if (a == null) return b;
+        if (b == null) return a;
+
+        if (a.data <= b.data) {
+            a.next = sortedMerge(a.next, b);
+            return a;
+        } else {
+            b.next = sortedMerge(a, b.next);
+            return b;
+        }
+    }
+
+    // Merge sort for linked list
+    static Node mergeSort(Node head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        Node middle = getMiddle(head);
+        Node nextOfMiddle = middle.next;
+        middle.next = null; // Split the list
+
+        Node left = mergeSort(head);
+        Node right = mergeSort(nextOfMiddle);
+
+        return sortedMerge(left, right);
+    }
+
     public static void main(String[] args) {
         Node head = listImplementation();
-        traversal(head);
+        // traversal(head);
         // System.out.println(search(head, 30));   // true
 
         // head = delete(head, head.next.next);
@@ -98,8 +140,7 @@ public class LinkedList_Operation {
         // Node newNode = new Node(50);
         // head = insert(head, newNode, 5);
 
-        
+        head = mergeSort(head);
         traversal(head);
-
     }
 }
