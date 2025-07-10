@@ -8,7 +8,7 @@ void SieveOfEratosthenes(vector<int>& primes) {
 	bool IsPrime[MAX_SIZE];
 	fill(begin(IsPrime), end(IsPrime), true);
 	for (int i = 2; i * i <= MAX_SIZE; i++) {
-		if (IsPrime[i] == true) {
+		if (IsPrime[i]) {
 			for (int j = i * i; j < MAX_SIZE; j += i) {
 				IsPrime[j] = false;
 			}
