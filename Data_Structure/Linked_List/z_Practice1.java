@@ -145,5 +145,4 @@ public class z_Practice1 {
         // circular_singlyLinkedList();
         circular_doublyLinkedList();
     }
-
 }
