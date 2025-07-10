@@ -80,7 +80,7 @@ public class z_Practice1 {
         System.out.println("null");
     }
     
-    private static void circular_singlyLinkedList() {
+    public static void circular_singlyLinkedList() {
         Node node1 = new Node(10);
         Node node2 = new Node(20);
         Node node3 = new Node(30);
@@ -102,7 +102,7 @@ public class z_Practice1 {
         System.out.println("null");
     }
 
-    protected static void circular_doublyLinkedList() {
+    public static void circular_doublyLinkedList() {
         Node2 node1 = new Node2(10);
         Node2 node2 = new Node2(20);
         Node2 node3 = new Node2(30);
