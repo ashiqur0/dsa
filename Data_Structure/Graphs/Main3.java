@@ -9,12 +9,12 @@ Do a recursive DFS traversal on each of the adjacent vertices as long as they ar
 
 package Data_Structure.Graphs;
 
-class BFS_Graph {
+class DFS_Graph {
     private int size;
     private int[][] adjacencyMatrix;
     private char[] vertices;
 
-    public BFS_Graph(int size) {
+    public DFS_Graph(int size) {
         this.size = size;
         this.adjacencyMatrix = new int[size][size];
         this.vertices = new char[size];
@@ -67,7 +67,7 @@ class BFS_Graph {
 
 public class Main3 {
     public static void main(String[] args) {
-        BFS_Graph graph = new BFS_Graph(7);
+        DFS_Graph graph = new DFS_Graph(7);
         graph.addVertices(0, 'A');
         graph.addVertices(1, 'B');
         graph.addVertices(2, 'C');
