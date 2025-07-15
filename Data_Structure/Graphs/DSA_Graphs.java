@@ -30,7 +30,7 @@ Adjacency List Graph Representation:
 
 package Data_Structure.Graphs;
 
-public class Graphs {
+public class DSA_Graphs {
 
     static void printAdjacencyMatrix(int[][] matrix) {
         System.out.println("\n\nAdjacency Matrix:");
