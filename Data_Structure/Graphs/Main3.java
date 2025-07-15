@@ -1,6 +1,10 @@
 /*
 Graphs: Graph Traversal DFS
 DFS: Depth First Search
+
+How it works:
+Start DFS traversal on a vertex.
+Do a recursive DFS traversal on each of the adjacent vertices as long as they are not already visited.
 */
 
 package Data_Structure.Graphs;
