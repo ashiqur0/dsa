@@ -3,7 +3,6 @@ Graphs: Graph Traversal DFS
 DFS: Depth First Search
 */
 
-
 package Data_Structure.Graphs;
 
 class BFS_Graph {
@@ -75,7 +74,6 @@ public class Main3 {
 
         graph.addEdge(3, 0);
         graph.addEdge(0, 2);
-        graph.addEdge(0, 3);
         graph.addEdge(0, 4);
         graph.addEdge(4, 2);
         graph.addEdge(2, 5);
