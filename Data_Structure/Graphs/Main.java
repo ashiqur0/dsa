@@ -1,5 +1,6 @@
 /*
-Graphs: Implementation using Class
+Graphs: Implementation using class
+Graphs: undirected and unweighted graph
 
 */
 
