@@ -1,5 +1,5 @@
 /*
-Graphs: Data Structure
+Graphs: Implementation
 Graphs: is a non linear data structures that consists vertices and edges.
 
 a Vertex: also called node, is a point or an object in the graph, and 
@@ -31,7 +31,32 @@ Adjacency List Graph Representation:
 package Data_Structure.Graphs;
 
 public class Graphs {
+
+    static void printAdjacencyMatrix(int[][] matrix) {
+        System.out.println("\n\nAdjacency Matrix:");
+        for (int[] row : matrix) {
+            for (int data : row) {
+                System.out.print(data + " ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
-        
+        String[] vertex = {"A", "B", "C", "D"};
+
+        int[][] AdjacencyMatrix = {
+            {0, 1, 1, 1},
+            {1, 0, 1, 0},
+            {1, 1, 0, 0},
+            {1, 0, 0, 0}
+        };
+
+        System.out.print("Vertex Data: ");
+        for (String node : vertex) {
+            System.out.print(node + " ");
+        }
+
+        printAdjacencyMatrix(AdjacencyMatrix);
     }
 }
