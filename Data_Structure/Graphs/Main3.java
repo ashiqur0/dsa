@@ -44,7 +44,7 @@ class DFS_Graph {
 
         System.out.println("\nVertices:");
         for (int i = 0; i < size; i++) {
-            System.out.println("vertex: " + i + ": " + vertices[i]);
+            System.out.println("vertex " + i + ": " + vertices[i]);
         }
     }
 
