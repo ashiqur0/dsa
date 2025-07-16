@@ -23,7 +23,7 @@ public class BinaryTreeYT {
         static int idx = -1;
         public Node buildTree(int[] nodes) {
             idx++;
-            if (nodes[idx] == -1) {
+            if (nodes[++idx] == -1) {
                 return null;
             }
 
