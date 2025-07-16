@@ -29,7 +29,7 @@ package Data_Structure.Tree;
 
 public class Tree {
 
-    static class Node {
+    private static class Node {
         String data;
         Node left;
         Node right;
