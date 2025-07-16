@@ -29,7 +29,39 @@ package Data_Structure.Tree;
 
 public class Tree {
 
-    public static void main(String[] args) {
+    static class Node {
+        String data;
+        Node left;
+        Node right;
 
+        public Node(String data) {
+            this.data = data;
+            this.left = null;
+            this.right = null;
+        }
+    }
+
+    public static void main(String[] args) {
+        Node root = new Node("R");
+        Node nodeA = new Node("A");
+        Node nodeB = new Node("B");
+        Node nodeC = new Node("C");
+        Node nodeD = new Node("D");
+        Node nodeE = new Node("E");
+        Node nodeF = new Node("F");
+        Node nodeG = new Node("G");
+
+        root.left = nodeA;
+        root.right = nodeB;
+
+        nodeA.left = nodeC;
+        nodeA.right = nodeD;
+
+        nodeB.left = nodeE;
+        nodeB.right = nodeF;
+
+        nodeF.left = nodeG;
+
+        System.out.println(root.left.right.data);
     }
 }
