@@ -1,11 +1,10 @@
 /*
 Binary Tree: Implementation
-
 */
 
 package Data_Structure.Tree;
 
-public class Main {
+public class Tree_Implementation {
 
     private static class TreeNode {
         char data;
