@@ -5,7 +5,7 @@ Binary Tree: Pre-order Traversal
 
 package Data_Structure.Tree;
 
-public class PreOrder {
+public class PreOrder_Traversal {
 
     private static class TreeNode {
         char data;
@@ -28,8 +28,8 @@ public class PreOrder {
             return;
         }
 
-        preOrder(root.left);
         System.out.print(root.data + " ");
+        preOrder(root.left);
         preOrder(root.right);
     }
 
