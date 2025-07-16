@@ -1,13 +1,13 @@
 /*
-Binary Tree: Implementation
+Binary Tree: Pre-order Traversal
 
 */
 
 package Data_Structure.Tree;
 
-public class Main {
+public class PreOrder {
 
-    static class TreeNode {
+    private static class TreeNode {
         char data;
         TreeNode left;
         TreeNode right;
@@ -18,13 +18,23 @@ public class Main {
             this.right = null;
         }
     }
-    
+
     public static TreeNode createNode(char data) {
         return new TreeNode(data);
     }
 
+    static void preOrder(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+
+        preOrder(root.left);
+        System.out.print(root.data + " ");
+        preOrder(root.right);
+    }
+
     public static void main(String[] args) {
-        TreeNode root = createNode('R');
+        TreeNode root = createNode('A');
         TreeNode nodeA = createNode('A');
         TreeNode nodeB = createNode('B');
         TreeNode nodeC = createNode('C');
@@ -32,18 +42,15 @@ public class Main {
         TreeNode nodeE = createNode('E');
         TreeNode nodeF = createNode('F');
         TreeNode nodeG = createNode('G');
-        
         root.left = nodeA;
         root.right = nodeB;
-
         nodeA.left = nodeC;
         nodeA.right = nodeD;
-
         nodeB.left = nodeE;
         nodeB.right = nodeF;
-
         nodeF.left = nodeG;
-
-        System.out.println(root.left.right.data);
+        
+        System.out.print("Pre-order Traversal: ");
+        preOrder(root);
     }
 }
