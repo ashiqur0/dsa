@@ -42,22 +42,29 @@ public class Insert_in_BST {
     }
 
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(13);
-        TreeNode node7 = new TreeNode(7);
-        TreeNode node15 = new TreeNode(15);
-        TreeNode node3 = new TreeNode(3);
-        TreeNode node8 = new TreeNode(8);
-        TreeNode node14 = new TreeNode(14);
-        TreeNode node19 = new TreeNode(19);
-        TreeNode node18 = new TreeNode(18);
+        // TreeNode root = new TreeNode(13);
+        // TreeNode node7 = new TreeNode(7);
+        // TreeNode node15 = new TreeNode(15);
+        // TreeNode node3 = new TreeNode(3);
+        // TreeNode node8 = new TreeNode(8);
+        // TreeNode node14 = new TreeNode(14);
+        // TreeNode node19 = new TreeNode(19);
+        // TreeNode node18 = new TreeNode(18);
 
-        root.left = node7;
-        root.right = node15;
-        node7.left = node3;
-        node7.right = node8;
-        node15.left = node14;
-        node15.right = node19;
-        node19.left = node18;
+        // root.left = node7;
+        // root.right = node15;
+        // node7.left = node3;
+        // node7.right = node8;
+        // node15.left = node14;
+        // node15.right = node19;
+        // node19.left = node18;
+
+        int[] node = {13, 7, 15, 3, 8, 14, 19, 18};
+        TreeNode root = null;
+
+        for (int i = 0; i < node.length; i++) {
+            root = insert(root, node[i]);
+        }
 
         inorder(root);
         System.out.println();
