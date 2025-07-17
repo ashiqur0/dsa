@@ -5,6 +5,7 @@ Binary Search Tree: Search in BST
 package Data_Structure.Tree;
 
 public class Search_in_BST {
+    
     private static class TreeNode {
         int data;
         TreeNode left;
