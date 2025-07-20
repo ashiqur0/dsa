@@ -5,7 +5,8 @@ Linked List: Singly Linked List
 package Data_Structure.Linked_List;
 
 public class Singly_Linked_List {
-    static class Node {
+
+    private static class Node {
         int data;
         Node next;
 
@@ -16,19 +17,18 @@ public class Singly_Linked_List {
     }
 
     public static void main(String[] args) {
-        Node node1 = new Node(10);
+        Node head = new Node(10);
         Node node2 = new Node(20);
         Node node3 = new Node(30);
-        Node node4 = new Node(40);
+        Node tail = new Node(40);
 
-        node1.next = node2;
+        head.next = node2;
         node2.next = node3;
-        node3.next = node4;
+        node3.next = tail;
 
-        Node currNode = node1;
-        while (currNode != null) {
-            System.out.print(currNode.data + " -> ");
-            currNode = currNode.next;
+        while (head != null) {
+            System.out.print(head.data + " -> ");
+            head = head.next;
         }
         System.out.println("null");
     }
