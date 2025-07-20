@@ -31,10 +31,9 @@ public class LinkedList_Operation {
     }
 
     public static void traversal(Node head) {
-        Node currentNode = head;
-        while (currentNode != null) {
-            System.out.print(currentNode.data + " -> ");
-            currentNode = currentNode.next;
+        while (head != null) {
+            System.out.print(head.data + " -> ");
+            head = head.next;
         }
         System.out.println("null");
     }
@@ -47,6 +46,25 @@ public class LinkedList_Operation {
             head = head.next;
         }
         return false;
+    }
+    
+    public static Node insert(Node head, Node newNode, int position) {
+        if (position == 1) {
+            newNode.next = head;
+            return newNode;
+        }
+
+        Node currNode = head;
+        for (int i = 1; i < position - 1 && currNode != null; i++) {
+            currNode = currNode.next;
+        }
+
+        if (currNode != null) {
+            newNode.next = currNode.next;
+            currNode.next = newNode;
+        }
+
+        return head;
     }
 
     public static Node delete(Node head, Node nodeTodelete) {
@@ -64,25 +82,6 @@ public class LinkedList_Operation {
         }
 
         currNode.next = currNode.next.next;
-
-        return head;
-    }
-
-    public static Node insert(Node head, Node newNode, int position) {
-        if (position == 1) {
-            newNode.next = head;
-            return newNode;
-        }
-
-        Node currNode = head;
-        for (int i = 1; i < position - 1 && currNode != null; i++) {
-            currNode = currNode.next;
-        }
-
-        if (currNode != null) {
-            newNode.next = currNode.next;
-            currNode.next = newNode;
-        }
 
         return head;
     }
