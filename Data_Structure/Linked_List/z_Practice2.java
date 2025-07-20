@@ -19,7 +19,15 @@ public class z_Practice2 {
         }
     }
 
-    public static void singlyLinkedList() {
+    public static void traverse(Node head) {
+        while (head != null) {
+            System.out.print(head.data + " -> ");
+            head = head.next;
+        }
+        System.out.println("null");
+    }
+
+    public static Node singlyLinkedList() {
         Node head = new Node(10);
         Node node1 = new Node(20);
         Node node2 = new Node(30);
@@ -29,14 +37,10 @@ public class z_Practice2 {
         node1.next = node2;
         node2.next = node3;
 
-        while (head != null) {
-            System.out.print(head.data + " -> ");
-            head = head.next;
-        }
-        System.out.println("null");
+        return head;
     }
 
-    public static void doublyLinkedList() {
+    public static  Node doublyLinkedList() {
         Node head = new Node(10);
         Node node1 = new Node(20);
         Node node2 = new Node(30);
@@ -50,17 +54,7 @@ public class z_Practice2 {
         node2.prev = node1;
         node1.prev = head;
 
-        while (head != null) {
-            System.out.print(head.data + " -> ");
-            head = head.next;
-        }
-        System.out.println("null");
-
-        while(tail != null) {
-            System.out.print(tail.data + " -> ");
-            tail = tail.prev;
-        }
-        System.out.println("null");
+        return head;
     }
 
     public static void circularSinglyLinkedList() {
@@ -120,10 +114,23 @@ public class z_Practice2 {
         System.out.println("...");
     }
 
+    public static boolean search(Node head, int target) {
+        while (head != null) {
+            if (head.data == target) {
+                return true;
+            }
+            head = head.next;
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
-        // singlyLinkedList();
-        // doublyLinkedList();
+        Node head = singlyLinkedList();
+        // Node head = doublyLinkedList();
         // circularSinglyLinkedList();
-        circularDoublyLinkedList();
+        // circularDoublyLinkedList();
+
+        traverse(head);
+        System.out.println(search(head, 22));
     }
 }
