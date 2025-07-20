@@ -5,7 +5,8 @@ Linked List: Circular Doubly Linked List
 package Data_Structure.Linked_List;
 
 public class Circular_Doubly_Linked_List {
-    static class Node {
+
+    private static class Node {
         int data;
         Node prev;
         Node next;
@@ -18,36 +19,36 @@ public class Circular_Doubly_Linked_List {
     }
 
     public static void main(String[] args) {
-        Node node1 = new Node(10);
-        Node node2 = new Node(20);
-        Node node3 = new Node(30);
-        Node node4 = new Node(40);
+        Node head = new Node(10);
+        Node node1 = new Node(20);
+        Node node2 = new Node(30);
+        Node tail = new Node(40);
 
+        head.next = node1;
         node1.next = node2;
-        node2.next = node3;
-        node3.next = node4;
-        node4.next = node1; // circular link
+        node2.next = tail;
+        tail.next = head; // circular link
 
-        node1.prev = node4; // circular link
+        head.prev = tail; // circular link
+        node1.prev = head;
         node2.prev = node1;
-        node3.prev = node2;
-        node4.prev = node3;
+        tail.prev = node2;
 
-        Node currNode = node1;
-        Node startNode = node1;
+        Node currNode = head;
         System.out.print(currNode.data + " -> ");
         currNode = currNode.next;
-        while (currNode != startNode) {
+        
+        while (currNode != head) {
             System.out.print(currNode.data + " -> ");
             currNode = currNode.next;
         }
         System.out.println("...");
 
-        currNode = node4;
-        startNode = node4;
+        currNode = tail;
         System.out.print(currNode.data + " -> ");
         currNode = currNode.prev;
-        while (currNode != startNode) {
+        
+        while (currNode != tail) {
             System.out.print(currNode.data + " -> ");
             currNode = currNode.prev;
         }
