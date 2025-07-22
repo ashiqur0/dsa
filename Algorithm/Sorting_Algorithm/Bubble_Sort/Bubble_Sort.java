@@ -33,7 +33,9 @@ public class Bubble_Sort {
 
         System.out.print("Before Sorting: ");
         printArray(arr);
+
         sort(arr);
+        
         System.out.print("After Sorting: ");
         printArray(arr);
     }
