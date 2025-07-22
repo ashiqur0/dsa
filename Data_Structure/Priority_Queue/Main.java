@@ -15,6 +15,7 @@ public class Main {
     public static void main(String[] args) {
         // Queue<Double> queue = new LinkedList<>();                            // keep as it is
         // Queue<Double> queue = new PriorityQueue();                           // sort ascending order
+        @SuppressWarnings({ "rawtypes", "unchecked" })
         Queue<Double> queue = new PriorityQueue(Collections.reverseOrder());    // sort descending order
 
         queue.offer(3.0);
@@ -28,6 +29,7 @@ public class Main {
         }
 
         // Queue<String> grade = new PriorityQueue();
+        @SuppressWarnings({ "rawtypes", "unchecked" })
         Queue<String> grade = new PriorityQueue(Collections.reverseOrder());
 
         grade.offer("B");
