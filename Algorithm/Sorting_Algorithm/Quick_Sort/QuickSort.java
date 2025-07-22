@@ -3,7 +3,7 @@ Quicksort: is one of the fastest sorting algorithms.
 
 */
 
-package Algorithm.Sorting_Algorithm;
+package Algorithm.Sorting_Algorithm.Quick_Sort;
 
 public class QuickSort {
 

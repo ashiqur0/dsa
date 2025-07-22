@@ -4,7 +4,7 @@ Merge Sort: is a divide-and-conquer algorithm
 The Merge Sort algorithm is a divide-and-conquer algorithm that sorts an array by first breaking it down into smaller arrays, and then building the array back together the correct way so that it is sorted.
 */
 
-package Algorithm.Sorting_Algorithm;
+package Algorithm.Sorting_Algorithm.Merge_Sort;
 
 import java.util.Arrays;
 
