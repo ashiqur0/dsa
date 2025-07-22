@@ -11,8 +11,9 @@ using namespace std;
 #define MAX_SIZE 1000005
 
 void SieveOfEratosthenes(vector<int>& primes) {
-	bool IsPrime[MAX_SIZE];
-	fill(begin(IsPrime), end(IsPrime), true);
+	// bool IsPrime[MAX_SIZE];
+	// fill(begin(IsPrime), end(IsPrime), true);
+	vector<bool> IsPrime(MAX_SIZE, true);
 	
 	for (int i = 2; i * i <= MAX_SIZE; i++) {
 		if (IsPrime[i]) {
