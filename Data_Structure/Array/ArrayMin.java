@@ -1,6 +1,9 @@
 /*
 Array: Find Minimum Value in Array
+
 */
+
+package Data_Structure.Array
 
 public class ArrayMin {
     public static void main(String[] args) {
