@@ -1,4 +1,6 @@
-// Sieve method of finding prime numbers
+/*
+Prime Number: First N Prime Number
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -27,7 +29,7 @@ int main() {
 	SieveOfEratosthenes(primes);
 
 	int n = 10;
-	for (int i = 0; i <= n; i++) {
+	for (int i = 0; i < n; i++) {
 		cout << primes[i] << " ";
 	}
 	cout << endl;
