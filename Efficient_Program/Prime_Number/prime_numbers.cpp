@@ -1,14 +1,19 @@
 /*
-Prime Number: First N Prime Number
+Prime Number: nth Prime, First N Prime Number
+
+Sieve of Eratosthenes: is an efficient method to finding prime number
 */
 
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
 #define MAX_SIZE 1000005
 
 void SieveOfEratosthenes(vector<int>& primes) {
 	bool IsPrime[MAX_SIZE];
 	fill(begin(IsPrime), end(IsPrime), true);
+	
 	for (int i = 2; i * i <= MAX_SIZE; i++) {
 		if (IsPrime[i]) {
 			for (int j = i * i; j < MAX_SIZE; j += i) {
