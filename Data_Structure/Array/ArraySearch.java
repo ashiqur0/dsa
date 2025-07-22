@@ -1,6 +1,9 @@
 /*
 Array: Search in an Array
+Search: Linear Search:
 
+Time Complexity: O(log(n))
+Space complexity: O(1)
 */
 
 package Data_Structure.Array;
