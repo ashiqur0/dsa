@@ -5,13 +5,15 @@ Time Complexity: O(n)
 Space Complexity: O(1)
 */
 
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
-int binarySearch(int arr[], int target) {
-    int size = sizeof(arr) / sizeof(arr[0]);
 
+int binarySearch(vector<int> arr, int target) {
     int left = 0;
-    int right = size - 1;
+    int right = arr.size() - 1;
+
     while(left <= right) {
         int mid = (left + right) / 2;
         if(arr[mid] == target) return mid;
@@ -23,16 +25,9 @@ int binarySearch(int arr[], int target) {
 
 int main() {
 
-    int arr[] = {1, 2, 3, 4, 5, 6, 7 };
+    vector<int> arr = {1, 2, 3, 4, 5, 6, 7 };
     int target = 4;
 
-    int result = binarySearch(arr, target);
-
-    if(result != -1) {
-        cout << target << " found at index " << result << endl;
-    } else {
-        cout << target << " not found" << endl;
-    }
-
+    cout << (binarySearch(arr, target) ? "Found" : "Not Found") << endl; 
     return 0;
 }
