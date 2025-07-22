@@ -28,6 +28,7 @@ int main() {
     vector<int> arr = {1, 2, 3, 4, 5, 6, 7 };
     int target = 4;
 
-    cout << (binarySearch(arr, target) ? "Found" : "Not Found") << endl; 
+    cout << (binarySearch(arr, target) ? "Found" : "Not Found") << endl;
+     
     return 0;
 }
