@@ -1,7 +1,5 @@
 package Data_Structure.Linked_List;
 
-import Efficient_Program.Factorial.nth_Factorial;
-
 public class z_Practice4 {
     
     private static class Node {
@@ -61,21 +59,26 @@ public class z_Practice4 {
     }
 
     public static void main(String[] args) {
-        Node head = new Node(10);
-        Node node1 = new Node(20);
-        Node node2 = new Node(30);
-        Node tail = new Node(40);
+        // Node head = new Node(10);
+        // Node node1 = new Node(20);
+        // Node node2 = new Node(30);
+        // Node tail = new Node(40);
 
-        head.next = node1;
-        node1.next = node2;
-        node2.next = tail;
+        // head.next = node1;
+        // node1.next = node2;
+        // node2.next = tail;
+        Node head = new Node(10);
+        for (int i = 1; i <= 5; i++) {
+            // Node newNode  = new Node(i * 10);
+            insert(head, new Node(i * 10), i);
+        }
 
         traverse(head);
 
         // Node newNode = new Node(50);
         // insert(head, newNode, 5);
         
-        delete(head, head.next);
+        delete(head, head.next);    // 20 delete
         traverse(head);        
     }
 }
