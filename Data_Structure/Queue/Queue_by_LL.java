@@ -13,73 +13,75 @@ Queues can be used to implement job scheduling for an office printer, order proc
 
 package Data_Structure.Queue;
 
-class Node {
-    protected char data;
-    protected Node next;
-
-    public Node(char data) {
-        this.data = data;
-        this.next = null;
-    }
-}
-
-class Queue {
-    private Node front;
-    private Node rear;
-    private int size;
-
-    Queue() {
-        this.size = 0;
-        this.front = null;
-        this.rear = null;
-    }
-
-    public void enqueue(char element) {
-        Node newNode = new Node(element);
-        if (rear == null) {
-            rear = front = newNode;
-            size++;
-            return;
-        }
-
-        rear.next = newNode;
-        rear = newNode;
-        size++;
-    }
-
-    public char dequeue() {
-        if (isEmpty()) {
-            System.out.println("Queue is empty");
-            return '\u0000';
-        }
-
-        Node temp = front;
-        front = temp.next;
-        if (front == null) {
-            rear = null;
-        }
-        size--;
-        return temp.data;
-    }
-
-    public char peek() {
-        if (isEmpty()) {
-            System.out.println("Queue is empty");
-            return '\u0000';
-        }
-        return front.data;
-    }
-
-    public boolean isEmpty() {
-        return size == 0;
-    }
-
-    public int size() {
-        return size;
-    }
-}
 
 public class Queue_by_LL {
+
+    private static class Node {
+        protected char data;
+        protected Node next;
+    
+        public Node(char data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+    
+    private static class Queue {
+        private Node front;
+        private Node rear;
+        private int size;
+    
+        public Queue() {
+            this.size = 0;
+            this.front = null;
+            this.rear = null;
+        }
+    
+        public void enqueue(char element) {
+            Node newNode = new Node(element);
+            if (rear == null) {
+                rear = front = newNode;
+                size++;
+                return;
+            }
+    
+            rear.next = newNode;
+            rear = newNode;
+            size++;
+        }
+    
+        public char dequeue() {
+            if (isEmpty()) {
+                System.out.println("Queue is empty");
+                return '\u0000';
+            }
+    
+            Node temp = front;
+            front = temp.next;
+            if (front == null) {
+                rear = null;
+            }
+            size--;
+            return temp.data;
+        }
+    
+        public char peek() {
+            if (isEmpty()) {
+                System.out.println("Queue is empty");
+                return '\u0000';
+            }
+            return front.data;
+        }
+    
+        public boolean isEmpty() {
+            return size == 0;
+        }
+    
+        public int size() {
+            return size;
+        }
+    }
+
     public static void main(String[] args) {
         Queue queue = new Queue();
         queue.enqueue('A');
