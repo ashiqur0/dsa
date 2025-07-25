@@ -8,7 +8,7 @@ Space Complexity: O(1)
 
 package Data_Structure.Array;
 
-public class ArraySearch2 {
+public class BinarySearch {
 
     public static boolean search(int[] arr, int target) {
         int left = 0;
