@@ -28,14 +28,14 @@ public class z_Practice3 {
     static Node insert(Node head, Node newNode, int position) {
         if (position == 1) {
             newNode.next = head;
-            return newNode.next;
+            return newNode;
         }
 
         Node curNode = head;
         for (int i = 1; i < position - 1 && curNode.next != null; i++) {
             curNode = curNode.next;
         }
-
+ 
         if (curNode.next == null) {
             newNode.next = curNode.next;
             curNode.next = newNode;
@@ -74,11 +74,11 @@ public class z_Practice3 {
         node2.next = tail;
 
         traverse(head);
-        head = delete(head, head.next); // delete 20
-        traverse(head);
-        
-        // Node newNode = new Node(50);
-        // head = insert(head, newNode, 5);
+        // head = delete(head, head.next); // delete 20
         // traverse(head);
+        
+        Node newNode = new Node(50);
+        head = insert(head, newNode, 5);
+        traverse(head);
     }
 }
