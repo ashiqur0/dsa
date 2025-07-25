@@ -13,6 +13,7 @@ package Data_Structure.Stack;
 
 
 public class Stack_by_LL {
+
     private static class Node {
         char value;
         Node next;
@@ -21,7 +22,8 @@ public class Stack_by_LL {
             this.next = null;
         }
     }
-    
+
+    // stack implement
     private static class Stack {
         private Node head;
         private int size;
@@ -30,7 +32,8 @@ public class Stack_by_LL {
             this.head = null;
             this.size = 0;
         }
-    
+        
+        // insert at top
         public void push(char value) {
             Node newNode = new Node(value);
             if (head != null) {
@@ -39,20 +42,24 @@ public class Stack_by_LL {
             head = newNode;
             size++;
         }
-    
+        
+        // remove and return top element
         public char pop() {
             if (isEmpty()) {
-                return ' ';
+                System.out.println("Stack is empty");
+                return '\u0000';
             }
             char popped = head.value;
             head = head.next;
             size--;
             return popped;
         }
-    
+        
+        // return top element
         public char peek() {
             if (isEmpty()) {
-                return ' ';
+                System.out.println("Stack is empty");
+                return '\u0000';
             }
             return head.value;
         }
