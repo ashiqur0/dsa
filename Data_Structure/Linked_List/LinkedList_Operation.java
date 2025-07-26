@@ -87,7 +87,7 @@ public class LinkedList_Operation {
     }
 
      // Function to find the middle of the list
-    static Node getMiddle(Node head) {
+    static Node mid(Node head) {
         if (head == null) return head;
 
         Node slow = head, fast = head.next;
@@ -99,15 +99,15 @@ public class LinkedList_Operation {
     }
 
     // Merge two sorted lists
-    static Node sortedMerge(Node a, Node b) {
+    static Node merge(Node a, Node b) {
         if (a == null) return b;
         if (b == null) return a;
 
         if (a.data <= b.data) {
-            a.next = sortedMerge(a.next, b);
+            a.next = merge(a.next, b);
             return a;
         } else {
-            b.next = sortedMerge(a, b.next);
+            b.next = merge(a, b.next);
             return b;
         }
     }
@@ -118,14 +118,14 @@ public class LinkedList_Operation {
             return head;
         }
 
-        Node middle = getMiddle(head);
+        Node middle = mid(head);
         Node nextOfMiddle = middle.next;
         middle.next = null; // Split the list
 
         Node left = mergeSort(head);
         Node right = mergeSort(nextOfMiddle);
 
-        return sortedMerge(left, right);
+        return merge(left, right);
     }
 
     public static void main(String[] args) {
