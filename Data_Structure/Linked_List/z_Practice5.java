@@ -8,7 +8,7 @@ public class z_Practice5 {
 
         Node(int data) {
             this.data = data;
-            this.next = next;
+            this.next = null;
         }
     }
 
