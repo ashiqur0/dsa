@@ -2,8 +2,6 @@
 Linked List: Circular Doubly Linked List
 */
 
-package Data_Structure.Linked_List;
-
 public class Circular_Doubly_Linked_List {
 
     private static class Node {

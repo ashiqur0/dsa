@@ -3,8 +3,6 @@ Linked List: Practice Day 3
 Practice: Insert and Delete operation
 */
 
-package Data_Structure.Linked_List;
-
 public class z_Practice3 {
 
     private static class Node {

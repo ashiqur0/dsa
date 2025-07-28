@@ -3,8 +3,6 @@ Linked List: Practice Day 2
 Singly Linked List
 */
 
-package Data_Structure.Linked_List;
-
 public class z_Practice2 {
 
     private static class Node {

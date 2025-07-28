@@ -3,8 +3,6 @@ Linked List: Practice Day 1
 Singly Linked List
 */
 
-package Data_Structure.Linked_List;
-
 public class z_Practice1 {
 
     // singly linked list, singly circular linked list

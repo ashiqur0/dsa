@@ -1,4 +1,3 @@
-package Data_Structure.Linked_List;
 
 public class z_Practice4 {
     

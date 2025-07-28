@@ -3,8 +3,6 @@ Linked List Operation: Traversal, Search, Sort, delete, insert, update
 
 */
 
-package Data_Structure.Linked_List;
-
 public class LinkedList_Operation {
 
     static class Node {
