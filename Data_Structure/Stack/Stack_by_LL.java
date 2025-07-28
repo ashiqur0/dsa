@@ -1,11 +1,11 @@
 /*
 Stack : Implementation using LinkedList
 Operation: 
-1. push
-2. pop
-3. peek
-4. size
-5. isEmpty
+1. push   : insert element to the top
+2. pop    : return and remove element from top
+3. peek   : return element from top
+4. size   : return size
+5. isEmpty: check if the stack is empty
 
 */
 
