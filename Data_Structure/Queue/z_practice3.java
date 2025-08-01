@@ -295,4 +295,3 @@ public class z_practice3 {
         System.out.println("Size: " + queue.size());
     }
 }
-
