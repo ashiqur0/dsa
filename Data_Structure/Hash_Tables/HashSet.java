@@ -41,13 +41,13 @@ public class HashSet {
             }
         }
 
-        public boolean contains(String value) {
+        public boolean search(String value) {
             int index = hashFunction(value);
             List<String> bucket = buckets.get(index);
             return bucket.contains(value);
         }
 
-        public void remove(String value) {
+        public void delete(String value) {
             int index = hashFunction(value);
             List<String> bucket = buckets.get(index);
             bucket.remove(value);
@@ -76,8 +76,8 @@ public class HashSet {
         hashSet.add("Samiul1");
         hashSet.add("Alim");
 
-        System.out.println("Arif is in the set: " + hashSet.contains("Arif"));
-        System.out.println("Tanzid is in the set: " + hashSet.contains("Tanzid"));
+        System.out.println("Arif is in the set: " + hashSet.search("Arif"));
+        System.out.println("Tanzid is in the set: " + hashSet.search("Tanzid"));
         System.out.println("Pollob has hash code: " + hashSet.hashFunction("Pollob"));
         
         hashSet.printSet();
