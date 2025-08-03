@@ -1,7 +1,3 @@
-/*
-Linked List: Practice Day 1
-Singly Linked List
-*/
 /* Practice LinkedList
 public class z_Practice1 {
 
@@ -719,6 +715,9 @@ public class z_Practice6 {
         traverse(head);
     }
 }
+*/
+/* Practice LinkedList
+
 */
 /* Practice LinkedList
 
