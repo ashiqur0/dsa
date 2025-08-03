@@ -4,6 +4,7 @@ import java.util.LinkedList;
 
 public class z_practice2 {
 
+    @SuppressWarnings("unchecked")
     static LinkedList<String>[] myHashSet = new LinkedList[10];
 
     static int hashFunction(String value) {
@@ -31,6 +32,12 @@ public class z_practice2 {
         }
     }
 
+    static void print(LinkedList<String>[] myHashSet) {
+        for (LinkedList<String> bucket : myHashSet) {
+            System.out.println(bucket);
+        }
+    }
+
     public static void main(String[] args) {
         for (int i = 0; i < myHashSet.length; i++) {
             myHashSet[i] = new LinkedList<>();
@@ -45,13 +52,9 @@ public class z_practice2 {
         add("Ashiqur");
         add("Arif");
 
-        for (LinkedList<String> bucket : myHashSet) {
-            System.out.println(bucket);
-        }
+        print(myHashSet);
         
         delete("Ashiqur");
-        for (LinkedList<String> bucket : myHashSet) {
-            System.out.println(bucket);
-        }
+        print(myHashSet);
     }
 }

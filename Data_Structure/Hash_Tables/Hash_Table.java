@@ -33,7 +33,7 @@ public class Hash_Table {
         }
     }
 
-    public static boolean contains(String value) {
+    public static boolean search(String value) {
         int index = hashFunction(value);
         LinkedList<String> bucket = myHashSet[index];
         return bucket.contains(value);
@@ -54,6 +54,6 @@ public class Hash_Table {
             System.out.println(bucket);
         }
 
-        System.out.println("Contains Ashiqur: " + contains("Ashiqur"));
+        System.out.println("Contains Ashiqur: " + search("Ashiqur"));
     }
 }
