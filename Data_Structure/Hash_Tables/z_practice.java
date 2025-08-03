@@ -190,7 +190,7 @@ public class z_practice {
         hashSet.print(hashSet.buckets);
     }
 }*/
-
+/* 
 
 import java.util.List;
 import java.util.ArrayList;
@@ -291,4 +291,103 @@ public class z_practice {
         hashMap.print();
         // System.out.println(hashMap.get(48));
     }
+}*/
+/* 
+import java.util.List;
+import java.util.ArrayList;
+
+class Pair {
+    int key;
+    String value;
+
+    Pair(int key, String value) {
+        this.key = key;
+        this.value = value;
+    }
 }
+
+public class z_practice {
+
+    static class SimpleHashMap {
+        int size;
+        List<List<Pair>> buckets;
+
+        SimpleHashMap(int size) {
+            this.size = size;
+            this.buckets = new ArrayList<>(size);
+
+            for (int i = 0; i < size; i++) {
+                buckets.add(new ArrayList<>());
+            }
+        }
+
+        int hashFunction(int key) {
+            int sum = 0;
+            while (key > 0) {
+                sum += key % 10;
+                key /= 10;
+            }
+            return sum % size;
+        }
+
+        void put(int key, String value) {
+            int index = hashFunction(key);
+            List<Pair> bucket = buckets.get(index);
+
+            for (Pair pair : bucket) {
+                if (pair.key == key) {
+                    pair.value = value;
+                    return;
+                }
+            }
+
+            bucket.add(new Pair(key, value));
+        }
+
+        String get(int key) {
+            int index = hashFunction(key);
+            List<Pair> bucket = buckets.get(index);
+
+            for (Pair pair : bucket) {
+                if (pair.key == key) {
+                    return pair.value;
+                }
+            }
+
+            return null;
+        }
+
+        void delete(int key) {
+            int index = hashFunction(key);
+            List<Pair> bucket = buckets.get(index);
+            bucket.removeIf(pair -> pair.key == key);
+        }
+
+        void print() {
+            for (List<Pair> bucket : buckets) {
+                if (bucket.isEmpty()) {
+                    System.out.println("[]");
+                    continue;
+                }
+                bucket.forEach(pair -> System.out.print("[" +pair.key + " " + pair.value + "] "));
+                System.out.println();
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        SimpleHashMap hashMap = new SimpleHashMap(10);
+        hashMap.put(1, "Samiul");
+        hashMap.put(2, "Nawshin");
+        hashMap.put(3, "Simanto");
+        hashMap.put(4, "Ruhi");
+        hashMap.put(5, "Fahim");
+        hashMap.put(8, "Murad");
+        hashMap.put(9, "Ashiqur");
+        hashMap.put(14, "Alim");
+        hashMap.put(16, "Rabbi");
+
+        hashMap.print();
+    }
+}*/
+
