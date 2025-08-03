@@ -2,7 +2,7 @@
 Binary Search Tree: Implementation
 */
 
-package Data_Structure.Tree;
+package Data_Structure.Tree.BinarySearchTree;
 
 public class BST_Implementation {
     private static class TreeNode {

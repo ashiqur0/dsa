@@ -2,7 +2,7 @@
 Binary Search Tree: Search in BST
 */
 
-package Data_Structure.Tree;
+package Data_Structure.Tree.BinarySearchTree;
 
 public class Search_in_BST {
     

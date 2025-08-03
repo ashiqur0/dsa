@@ -2,7 +2,7 @@
 Binary Search Tree: Find Lowest value in BST
 */
 
-package Data_Structure.Tree;
+package Data_Structure.Tree.BinarySearchTree;
 
 public class Lowest_in_BST_subTree {
     

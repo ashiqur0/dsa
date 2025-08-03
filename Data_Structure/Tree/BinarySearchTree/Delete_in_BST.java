@@ -2,7 +2,7 @@
 Binary Search Tree: Delete a node in BST
 */
 
-package Data_Structure.Tree;
+package Data_Structure.Tree.BinarySearchTree;
 
 public class Delete_in_BST {
     

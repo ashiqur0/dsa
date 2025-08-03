@@ -2,7 +2,7 @@
 Binary Search Tree: Insert in BST
 */
 
-package Data_Structure.Tree;
+package Data_Structure.Tree.BinarySearchTree;
 
 public class Insert_in_BST {
     
