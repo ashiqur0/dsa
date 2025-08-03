@@ -23,11 +23,6 @@ public class z_practice_Hash_Table {
         myHashSet[index] = null;
     }
 
-    static void add(String value) {
-        int index = hashFunction(value);
-
-    }
-
     public static void main(String[] args) {
         // int index = hashFunction("Bob");
         // str[index] = "Bob";                 // insert 
