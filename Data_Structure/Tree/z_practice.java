@@ -1,5 +1,6 @@
 package Data_Structure.Tree;
 
+/* 
 public class z_practice {
     
     private static class Node {
@@ -73,7 +74,7 @@ public class z_practice {
         System.out.print("\nPostorder:\t");
         postorder(root);
     }
-}
+}*/
 
 /* Practice Tree
 
