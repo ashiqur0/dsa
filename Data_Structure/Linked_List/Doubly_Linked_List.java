@@ -2,6 +2,7 @@
 Linked List: Doubly Linked List
 Forward and backward direction 
 */
+package Data_Structure.Linked_List;
 
 public class Doubly_Linked_List {
 

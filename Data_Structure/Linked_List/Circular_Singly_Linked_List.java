@@ -1,6 +1,7 @@
 /*
 Linked List: Circular Singly Linked List
 */
+package Data_Structure.Linked_List;
 
 public class Circular_Singly_Linked_List {
 

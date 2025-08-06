@@ -1,6 +1,7 @@
 /*
 Linked List: Singly Linked List
 */
+package Data_Structure.Linked_List;
 
 public class Singly_Linked_List {
 
